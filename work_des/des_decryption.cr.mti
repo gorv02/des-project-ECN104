@@ -1,1 +1,29 @@
+C:/Users/gorav/Documents/Git/des-project-ECN104/work_des/work_des/t_shift_register.v {1 {vlog -work work_des -stats=none C:/Users/gorav/Documents/Git/des-project-ECN104/work_des/work_des/t_shift_register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tShiftRegister
 
+Top level modules:
+	tShiftRegister
+
+} {} {}} C:/Users/gorav/Documents/Git/des-project-ECN104/work_des/work_des/shift_register.v {1 {vlog -work work_des -stats=none C:/Users/gorav/Documents/Git/des-project-ECN104/work_des/work_des/shift_register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module shiftRegister
+
+Top level modules:
+	shiftRegister
+
+} {} {}} C:/Users/gorav/Documents/Git/des-project-ECN104/work_des/work_des/mux_4X1.v {1 {vlog -work work_des -stats=none C:/Users/gorav/Documents/Git/des-project-ECN104/work_des/work_des/mux_4X1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux4X1
+
+Top level modules:
+	mux4X1
+
+} {} {}} C:/Users/gorav/Documents/Git/des-project-ECN104/work_des/work_des/d_flipflop.v {1 {vlog -work work_des -stats=none C:/Users/gorav/Documents/Git/des-project-ECN104/work_des/work_des/d_flipflop.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module dFlipflop
+
+Top level modules:
+	dFlipflop
+
+} {} {}}
