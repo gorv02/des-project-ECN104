@@ -1,4 +1,4 @@
-module post_sbox_perm(input [1:32] in, output reg [1:32] out);
+module postSBoxPermutation (input [1:32] in, output reg [1:32] out);
 	 
 	always @ (in) begin 
 		out[1]<=in[16];

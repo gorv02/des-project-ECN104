@@ -1,6 +1,6 @@
-module test_SubkeyGeneration;
-reg [64:1] key;
-wire [48:1] subkey1, subkey2, subkey3, subkey4, subkey5, subkey6, subkey7, subkey8,
+module test_subkeyGeneration;
+reg [1:64] key;
+wire [1:48] subkey1, subkey2, subkey3, subkey4, subkey5, subkey6, subkey7, subkey8,
 			subkey9, subkey10, subkey11, subkey12, subkey13, subkey14, subkey15, subkey16;
 			
 	subkeyGenerator sbk (subkey1, subkey2, subkey3, subkey4, subkey5, subkey6, subkey7, subkey8,

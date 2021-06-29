@@ -1,5 +1,4 @@
-
-module Expansion_roundfunc(input wire [1:32] right_half, output reg [1:48] expanded);
+module expansionPermutation (input wire [1:32] right_half, output reg [1:48] expanded);
 	always @ (right_half) begin
 		expanded[1]<= right_half[32];
 		expanded[2:5]<= right_half[1:4];
