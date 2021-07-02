@@ -1,10 +1,10 @@
-module subkeyGenerator (output [1:48] subkey1, subkey2, subkey3, subkey4, subkey5, subkey6, subkey7, subkey8,
-			subkey9, subkey10, subkey11, subkey12, subkey13, subkey14, subkey15, subkey16, 
-			input [1:64] key);
+module subkeyGenerator (input [1:64] key, output [1:48] subkey1, subkey2, subkey3, subkey4, subkey5, subkey6, subkey7, subkey8,
+							subkey9, subkey10, subkey11, subkey12, subkey13, subkey14, subkey15, subkey16);
 wire [1:56] subk56bit;
 	PC1 pc1 (subk56bit, key);
 wire [1:28] left [0:16];
 wire [1:28] right [0:16];
+	
 	assign left[0] = subk56bit[1:28];
 	assign right[0] = subk56bit[29:56];
 	
@@ -36,7 +36,7 @@ wire [1:28] right [0:16];
 	PC2 p9 (subkey9, left[9], right[9]);
 	
 	leftShift ls10 (left[10], right[10], 2, left[9], right[9]);
-	PC2 p0 (subkey10, left[10], right[10]);
+	PC2 p10 (subkey10, left[10], right[10]);
 	
 	leftShift ls11 (left[11], right[11], 2, left[10], right[10]);
 	PC2 p11 (subkey11, left[11], right[11]);
