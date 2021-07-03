@@ -28,7 +28,7 @@ module expansionPermutation (input wire [1:32] right_half, output reg [1:48] exp
 		expanded[38:41]<=right_half[25:28];
 		expanded[42]<=right_half[29];
 
-		expanded[43]<=right_half[30];
+		expanded[43]<=right_half[28];
 		expanded[44:47]<=right_half[29:32];
 		expanded[48]<=right_half[1];
 	end

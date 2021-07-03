@@ -1,6 +1,6 @@
-module sbox1(input [6:1] six_bin, output reg [4:1] four_bout);
-	wire [6:1] index;
-	assign index = {six_bin[6], six_bin[1], six_bin[5 : 2]}; 	  	 
+module sbox1(input [1:6] six_bin, output reg [1:4] four_bout);
+	wire [1:6] index;
+	assign index = {six_bin[1], six_bin[6], six_bin[2 : 5]}; 	  	 
 	always @(index)	begin  	   	    
 		case (index)             
 		6'b000000:  four_bout <= 4'd14;             
@@ -66,17 +66,16 @@ module sbox1(input [6:1] six_bin, output reg [4:1] four_bout);
 		6'b111100:  four_bout <= 4'd10;       
 		6'b111101:  four_bout <= 4'd0;       
 		6'b111110:  four_bout <= 4'd6;      
-		6'b111111:  four_bout <= 4'd13;      
-		default:    four_bout <= 4'd0; 		
+		6'b111111:  four_bout <= 4'd13;       		
 		endcase 			 
 	end	
 endmodule
 
 
 
-module sbox2( input [6:1] six_bin, output reg [4:1] four_bout);
-	wire [6:1] index;
-	assign index = {six_bin[6], six_bin[1], six_bin[5 : 2]}; 	  	 
+module sbox2( input [1:6] six_bin, output reg [1:4] four_bout);
+	wire [1:6] index;
+	assign index = {six_bin[1], six_bin[6], six_bin[2:5]}; 	  	 
 	always @(index) begin  	   	    
 		case (index)             
 		6'b000000:  four_bout <= 4'd15;             
@@ -142,17 +141,16 @@ module sbox2( input [6:1] six_bin, output reg [4:1] four_bout);
 		6'b111100:  four_bout <= 4'd0;       
 		6'b111101:  four_bout <= 4'd5;       
 		6'b111110:  four_bout <= 4'd14;      
-		6'b111111:  four_bout <= 4'd9;      
-		default:    four_bout <= 4'd0; 		
+		6'b111111:  four_bout <= 4'd9;       		
 		endcase 			 
 	end
 endmodule
 
 
 
-module sbox3(input [6:1] six_bin, output reg [4:1] four_bout);
-	wire [6:1] index;
-	assign index = {six_bin[6], six_bin[1], six_bin[5 : 2]}; 	  	 
+module sbox3(input [1:6] six_bin, output reg [1:4] four_bout);
+	wire [1:6] index;
+	assign index = {six_bin[1], six_bin[6], six_bin[2:5]}; 	  	 
 	always @(index) begin  	   	    
 		case (index)             
 		6'b000000:  four_bout <= 4'd10;             
@@ -218,8 +216,7 @@ module sbox3(input [6:1] six_bin, output reg [4:1] four_bout);
 		6'b111100:  four_bout <= 4'd11;       
 		6'b111101:  four_bout <= 4'd5;       
 		6'b111110:  four_bout <= 4'd2;      
-		6'b111111:  four_bout <= 4'd12;      
-		default:    four_bout <= 4'd0; 		
+		6'b111111:  four_bout <= 4'd12;      		
 		endcase 			 
 	end
 	 
@@ -229,9 +226,9 @@ endmodule
 
 
 
-module sbox4(input [6:1] six_bin, output reg [4:1] four_bout);
-	wire [6:1] index;
-	assign index = {six_bin[6], six_bin[1], six_bin[5 : 2]}; 	  	 
+module sbox4(input [1:6] six_bin, output reg [1:4] four_bout);
+	wire [1:6] index;
+	assign index = {six_bin[1], six_bin[6], six_bin[2:5]}; 	  	 
 	always @(index) begin  	   	    
 		case (index)             
 		6'b000000:  four_bout <= 4'd7;             
@@ -297,17 +294,16 @@ module sbox4(input [6:1] six_bin, output reg [4:1] four_bout);
 		6'b111100:  four_bout <= 4'd12;       
 		6'b111101:  four_bout <= 4'd7;       
 		6'b111110:  four_bout <= 4'd2;      
-		6'b111111:  four_bout <= 4'd14;      
-		default:    four_bout <= 4'd0; 		
+		6'b111111:  four_bout <= 4'd14;      		
 		endcase 			 
 	end
 endmodule
 
 
 
-module sbox5(input [6:1] six_bin, output reg [4:1] four_bout);
-	wire [6:1] index;
-	assign index = {six_bin[6], six_bin[1], six_bin[5 : 2]}; 	  	 
+module sbox5(input [1:6] six_bin, output reg [1:4] four_bout);
+	wire [1:6] index;
+	assign index = {six_bin[1], six_bin[6], six_bin[2:5]}; 	  	 
 	always @(index) begin  	   	    
 		case (index)             
 		6'b000000:  four_bout <= 4'd2;             
@@ -374,16 +370,15 @@ module sbox5(input [6:1] six_bin, output reg [4:1] four_bout);
 		6'b111101:  four_bout <= 4'd4;       
 		6'b111110:  four_bout <= 4'd5;      
 		6'b111111:  four_bout <= 4'd3;      
-		default:    four_bout <= 4'd0; 		
 		endcase 			 
 	end
 endmodule
 
 
 
-module sbox6( input [6:1] six_bin, output reg [4:1] four_bout);
-	wire [6:1] index;
-	assign index = {six_bin[6], six_bin[1], six_bin[5 : 2]}; 	  	 
+module sbox6( input [1:6] six_bin, output reg [1:4] four_bout);
+	wire [1:6] index;
+	assign index = {six_bin[1], six_bin[6], six_bin[2:5]}; 	  	 
 	always @(index) begin  	   	    
 		case (index)             
 		6'b000000:  four_bout <= 4'd12;             
@@ -449,17 +444,16 @@ module sbox6( input [6:1] six_bin, output reg [4:1] four_bout);
 		6'b111100:  four_bout <= 4'd6;       
 		6'b111101:  four_bout <= 4'd0;       
 		6'b111110:  four_bout <= 4'd8;      
-		6'b111111:  four_bout <= 4'd13;      
-		default:    four_bout <= 4'd0; 		
+		6'b111111:  four_bout <= 4'd13;      		
 		endcase 			 
 	end
 endmodule
 
 
 
-module sbox7(input [6:1] six_bin, output reg [4:1] four_bout);
-	wire [6:1] index;
-	assign index = {six_bin[6], six_bin[1], six_bin[5 : 2]}; 	  	 
+module sbox7(input [1:6] six_bin, output reg [1:4] four_bout);
+	wire [1:6] index;
+	assign index = {six_bin[1], six_bin[6], six_bin[2:5]}; 	  	 
 	always @(index) begin  	   	    
 		case (index)             
 		6'b000000:  four_bout <= 4'd4;             
@@ -525,17 +519,16 @@ module sbox7(input [6:1] six_bin, output reg [4:1] four_bout);
 		6'b111100:  four_bout <= 4'd14;       
 		6'b111101:  four_bout <= 4'd2;       
 		6'b111110:  four_bout <= 4'd3;      
-		6'b111111:  four_bout <= 4'd12;      
-		default:    four_bout <= 4'd0; 		
+		6'b111111:  four_bout <= 4'd12;      	
 		endcase 			 
 	end
 endmodule
 
 
 
-module sbox8(input [6:1] six_bin,  output reg [4:1] four_bout);
-	wire [6:1] index;
-	assign index = {six_bin[6], six_bin[1], six_bin[5 : 2]}; 	  	 
+module sbox8(input [1:6] six_bin,  output reg [1:4] four_bout);
+	wire [1:6] index;
+	assign index = {six_bin[1], six_bin[6], six_bin[2:5]}; 	  	 
 	always @(index) begin  	   	    
 		case (index)             
 		6'b000000:  four_bout <= 4'd13;             
@@ -601,8 +594,7 @@ module sbox8(input [6:1] six_bin,  output reg [4:1] four_bout);
 		6'b111100:  four_bout <= 4'd3;       
 		6'b111101:  four_bout <= 4'd5;       
 		6'b111110:  four_bout <= 4'd6;      
-		6'b111111:  four_bout <= 4'd11;      
-		default:    four_bout <= 4'd0; 		
+		6'b111111:  four_bout <= 4'd11;      	
 		endcase 			 
 	end
 endmodule
