@@ -5,8 +5,10 @@ reg [1:48] a [1:16];
 wire [1:32] left [0:16];
 wire [1:32] right [0:16];
 
-	subkeyGenerator s (key, subkey[1], subkey[2], subkey[3], subkey[4], subkey[5], subkey[6], subkey[7], subkey[8], 
-					subkey[9], subkey[10], subkey[11], subkey[12], subkey[13], subkey[14], subkey[15], subkey[16]);
+	subkeyGenerator s (key, subkey[1], subkey[2], subkey[3], subkey[4], 
+						subkey[5], subkey[6], subkey[7], subkey[8], 
+					subkey[9], subkey[10], subkey[11], subkey[12], subkey[13],
+							subkey[14], subkey[15], subkey[16]);
 					
 	always @(enc1_dec0, subkey) begin
 		if (enc1_dec0 == 1'b1) begin

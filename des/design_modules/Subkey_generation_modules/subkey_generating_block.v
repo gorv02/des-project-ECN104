@@ -1,5 +1,6 @@
-module subkeyGenerator (input [1:64] key, output [1:48] subkey1, subkey2, subkey3, subkey4, subkey5, subkey6, subkey7, subkey8,
-							subkey9, subkey10, subkey11, subkey12, subkey13, subkey14, subkey15, subkey16);
+module subkeyGenerator (input [1:64] key, output [1:48] subkey1, subkey2, subkey3,
+						subkey4, subkey5, subkey6, subkey7, subkey8, subkey9, subkey10,
+						subkey11, subkey12, subkey13,	subkey14, subkey15, subkey16);
 wire [1:56] subk56bit;
 	PC1 pc1 (subk56bit, key);
 wire [1:28] left [0:16];
